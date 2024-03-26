@@ -1,19 +1,14 @@
 {
-  "name": "miercoles",
+  "name": "martes",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "watch": "node --watch . ",
-    "dev": "nodemon  . ",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"webpack "
+    "dev": "node --watch .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^3.1.0"
-  }
+  "license": "ISC"
 }

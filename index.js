@@ -1,30 +1,99 @@
-//var
-/*hgisudgfiu
-sddfv
-sdfvsdf*/
-// var
-console.log(`🚀 ~ nombre:`, nombre)
-var nombre
-console.log(`🚀 ~ nombre:`, nombre)
-var nombre="canela"
-nombre="camilo"
-var nombre="kuka"
-console.log(`🚀 ~ nombre:`, nombre)
+// // tipos de datos en js
 
-// let 
-// console.log(`🚀 ~ apellido:`, apellido)
-let apellido
-console.log(`🚀 ~ apellido:`, apellido)
-apellido="ojeda"
-console.log(`🚀 ~ apellido:`, apellido)
-// let apellido no se puede redeclarar la variable,
+// // datos primitivos
+// // String, numbers, Boolean, null y undefined, bigint, symbol
 
-// const
-// const edad
-// console.log(`🚀 ~ edad:`, edad)
+// let str = "string o cadena";
+// console.log(`🚀 ~ str:`, str);
+// console.log(`🚀 ~ str:`, typeof str);
 
-const edad=32
-console.log(`🚀 ~ edad:`, edad)
-// edad=37
-// console.log(`🚀 ~ edad:`, edad)
-// const edad=443
+// let nun = 22;
+// console.log(`🚀 ~ nun:`, nun);
+// console.log(`🚀 ~ nun:`, typeof nun);
+
+// let bigN = 2345689876n;
+// console.log(`🚀 ~ bigN:`, bigN);
+// console.log(`🚀 ~ bigN:`, typeof bigN);
+
+// let bool = true; //false
+// console.log(`🚀 ~ bool:`, bool);
+// console.log(`🚀 ~ bool:`, typeof bool);
+
+// let und = undefined;
+// console.log(`🚀 ~ und:`, und);
+// console.log(`🚀 ~ und:`, typeof und);
+
+// let sym = Symbol(23);
+// console.log(`🚀 ~ sym:`, sym);
+// console.log(`🚀 ~ sym:`, typeof sym);
+
+// let nl = null;
+// console.log(`🚀 ~ nl:`, nl);
+// console.log(`🚀 ~ nl:`, typeof nl);
+
+// // datos complejos
+// // objetos
+// const obj = {
+//   nombre: "camilo",
+//   apellido: "ojeda",
+//   ladrar: function () {
+//     console.log("estoy ladrando");
+//   },
+// };
+// // obj="kuka"
+// obj.nombre = "canela";
+// console.log(`🚀 ~ obj:`, obj.nombre);
+// console.log(`🚀 ~ obj:`, obj["nombre"]);
+// console.log(`🚀 ~ obj:`, typeof obj);
+
+// const arr = [1, "osval", {}];
+// arr[2] = "Ojeda";
+// console.log(`🚀 ~ arr:`, arr[1]);
+// console.log(`🚀 ~ arr:`, arr[2]);
+// console.log(`🚀 ~ arr:`, typeof arr);
+
+// const newDate = new Date();
+// console.log(`🚀 ~ newDate:`, newDate);
+// console.log(`🚀 ~ newDate:`, typeof newDate);
+
+// const date = Date();
+// console.log(`🚀 ~ date:`, date);
+// console.log(`🚀 ~ date:`, typeof date);
+
+// ---------------
+// console.log(`🚀 ~ nombre:`, nombre)
+// var nombre="osvaldito"
+// console.log(`🚀 ~ nombre:`, nombre)
+// saludar("jaco");
+// function saludar(param) {
+//   console.log("hola " + param + " como estas?");
+//   console.log(`hola ${param} como estas????`);
+// }
+// console.log(`🚀 ~ saluda ~ saludar:`, saludar);
+// console.log(`🚀 ~ saluda ~ saludar:`, typeof saludar);
+// // console.log(`🚀 ~ saluda ~ saludar:`,  saludar())
+// saludar(2, "hola");
+
+// arrow function
+// const suma = (x, y) => x + y;
+// suma(7,8)
+// const suma = (x, y) => {
+//  return  x + y;
+// };
+// console.log(`🚀 ~ suma:`, suma);
+// console.log(suma(5, 6));
+// console.log(suma(7,8))
+
+// console.log("this", this)
+
+function thisFunction() {
+     console.log(`🚀 ~ thisFunction ~ :`, this)
+}
+// thisFunction()
+
+const thisArrow=()=>{
+     console.log(`🚀 ~ thisArrow ~ thisArrow:`, this)
+}
+// thisArrow()
+
+// ---------------------
