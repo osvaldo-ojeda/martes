@@ -97,3 +97,55 @@ const thisArrow=()=>{
 // thisArrow()
 
 // ---------------------
+
+// let nick= "Pablo"
+// let nombre=nick
+// nombre="Franco Roman"
+// console.log(`🚀 ~ name:`, nick)
+// console.log(`🚀 ~ nombre:`, nombre)
+
+const data={
+     nombre:"Juanito",
+     edad:30,
+     titulos:["primario", "secundario"]
+}
+// const userData=data
+// userData.nombre="Raul"
+// console.log(`🚀 ~ data:`, data)
+// console.log(`🚀 ~ userData:`, userData)
+
+// copias de obj
+const dataHandCopy={
+     nombre:data.nombre
+}
+// dataHandCopy.nombre="juan"
+// console.log(`🚀 ~ dataHandCopy:`, dataHandCopy)
+// console.log(`🚀 ~ data:`, data)
+
+// spread copy
+// const dataSpread={...data}
+//  dataSpread.nombre="Juan"
+// console.log(`🚀 ~ dataSpread:`, dataSpread)
+// console.log(`🚀 ~ data:`, data)
+
+// Object.assign
+// const  dataAssign =Object.assign({}, data);
+// dataAssign.nombre="juan";
+// dataAssign.titulos.push("bachillerato")
+// console.log(`🚀 ~ dataAssign:`, dataAssign)
+// console.log(`🚀 ~ data:`, data)
+
+// json
+
+const jsonCopy=JSON.parse(JSON.stringify(data))
+jsonCopy.nombre="juan"
+ jsonCopy.titulos.push("bachillerato")
+console.log(`🚀 ~ jsonCopy:`, jsonCopy)
+
+console.log(`🚀 ~ data:`, data)
+
+
+
+
+
+
