@@ -87,13 +87,13 @@
 // console.log("this", this)
 
 function thisFunction() {
-     console.log(`🚀 ~ thisFunction ~ :`, this)
+  console.log(`🚀 ~ thisFunction ~ :`, this);
 }
 // thisFunction()
 
-const thisArrow=()=>{
-     console.log(`🚀 ~ thisArrow ~ thisArrow:`, this)
-}
+const thisArrow = () => {
+  console.log(`🚀 ~ thisArrow ~ thisArrow:`, this);
+};
 // thisArrow()
 
 // ---------------------
@@ -104,20 +104,21 @@ const thisArrow=()=>{
 // console.log(`🚀 ~ name:`, nick)
 // console.log(`🚀 ~ nombre:`, nombre)
 
-const data={
-     nombre:"Juanito",
-     edad:30,
-     titulos:["primario", "secundario"]
-}
+const data = {
+  nombre: "Juanito",
+  edad: 30,
+  titulos: ["primario", "secundario"],
+  date: new Date(),
+};
 // const userData=data
 // userData.nombre="Raul"
 // console.log(`🚀 ~ data:`, data)
 // console.log(`🚀 ~ userData:`, userData)
 
 // copias de obj
-const dataHandCopy={
-     nombre:data.nombre
-}
+const dataHandCopy = {
+  nombre: data.nombre,
+};
 // dataHandCopy.nombre="juan"
 // console.log(`🚀 ~ dataHandCopy:`, dataHandCopy)
 // console.log(`🚀 ~ data:`, data)
@@ -137,15 +138,56 @@ const dataHandCopy={
 
 // json
 
-const jsonCopy=JSON.parse(JSON.stringify(data))
-jsonCopy.nombre="juan"
- jsonCopy.titulos.push("bachillerato")
-console.log(`🚀 ~ jsonCopy:`, jsonCopy)
+// const jsonCopy=JSON.parse(JSON.stringify(data))
+// jsonCopy.nombre="juan"
+//  jsonCopy.titulos.push("bachillerato")
+// console.log(`🚀 ~ jsonCopy:`, jsonCopy)
 
-console.log(`🚀 ~ data:`, data)
+// console.log(`🚀 ~ data:`, data)
 
+// structuredClone
+// const cloneCopy=structuredClone(data)
+// cloneCopy.nombre="Juan"
+// cloneCopy.titulos.unshift("jardin")
+// console.log(`🚀 ~ cloneCopy:`, cloneCopy)
 
+// console.log(`🚀 ~ data:`, data)
 
+// ---------------------------
 
+// callbacks
 
+function buenDia() {
+  console.log(`🚀 ~ buenDia ~ buenDia:`);
+}
+function buenasNoches() {
+  console.log(`🚀 ~ buenasNoches ~ buenasNoches:`);
+}
 
+function saludar(fn) {
+  return fn();
+}
+
+// saludar(buenDia) //
+// saludar(buenasNoches) //
+
+const pet = ["perro", "gatos", "loro"];
+
+const petUppercase = [];
+
+function upper(pet) {
+  pet.forEach((element, index, array) => {
+    // console.log(`🚀 ~ pet.forEach ~ array:`, array)
+    // console.log(`🚀 ~ element:`, element)
+    // console.log(`🚀 ~ index:`, index)
+    petUppercase.push(element.toUpperCase());
+  });
+}
+upper(pet);
+
+// console.log(`🚀 ~ petUppercase:`, petUppercase)
+
+const apercaseMap = pet.map((element, index, array) => {
+  return element.toUpperCase();
+});
+console.log(`🚀 ~ apercaseMap:`, apercaseMap);
