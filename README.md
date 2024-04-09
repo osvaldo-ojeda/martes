@@ -1,4 +1,4 @@
-# clase 1
+# clase 2
 
 ## ¿Qué es una variable?
 
