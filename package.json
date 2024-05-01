@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "watch": "node --watch . ",
-    "dev": "nodemon  . ",
+    "dev": "node --watch . ",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build":"webpack "
   },
