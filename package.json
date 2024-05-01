@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node .",
-    "watch": "node --watch . ",
-    "dev": "nodemon  . ",
+    "dev": "node --watch . ",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build":"webpack "
   },

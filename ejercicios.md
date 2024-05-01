@@ -1,0 +1,1 @@
+crear funciones utilizando los metodosl fs.readdirSync(), fs.mkdirSync(), fs.unlinkSync(), fs.rmdirSync(), fs.statSync(), fs.renameSync() del modulo fs.
