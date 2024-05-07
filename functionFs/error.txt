@@ -1,0 +1,16 @@
+{"code":"ERR_INVALID_ARG_TYPE"}
+{"code":"ERR_INVALID_ARG_TYPE"}
+{"code":"ERR_INVALID_ARG_TYPE"}
+{"code":"ERR_INVALID_ARG_TYPE"}
+{"code":"ERR_INVALID_ARG_TYPE"}
+{"code":"ERR_INVALID_ARG_TYPE"}
+{"code":"ERR_INVALID_ARG_TYPE"}
+{"code":"ERR_INVALID_ARG_TYPE"}
+{"code":"ERR_INVALID_ARG_TYPE"}
+{"code":"ERR_INVALID_ARG_TYPE"}
+{"code":"ERR_INVALID_ARG_TYPE"}
+{"code":"ERR_INVALID_ARG_TYPE"}
+{"code":"ERR_INVALID_ARG_TYPE"}
+{"code":"ERR_INVALID_ARG_TYPE"}
+{"code":"ERR_INVALID_ARG_TYPE"}
+{"errno":-2,"code":"ENOENT","syscall":"open","path":""}
