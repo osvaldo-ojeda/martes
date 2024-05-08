@@ -17,6 +17,8 @@
     "nodemon": "^3.1.0"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "moment": "^2.30.1",
+    "momment": "^0.0.1"
   }
 }
