@@ -1,14 +1,8 @@
 import express from "express";
 import routes from "./routes/routes.js";
-import { myLogger } from "./middlewares/myLogger.js";
 import morgan from "morgan";
 
-// console.log(`🚀 ~ express:`, express)
 const app = express();
-
-// app.use(myLogger);
-
-// app.use(myLogger, routes);
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(morgan("tiny"));
