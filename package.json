@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.19.2",
     "morgan": "^1.10.0",
-    "mysql2": "^3.9.7"
+    "mysql2": "^3.9.7",
+    "sequelize": "^6.37.3"
   }
 }

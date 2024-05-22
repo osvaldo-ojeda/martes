@@ -1,21 +1,16 @@
-import mysql from "mysql2/promise";
+import { Sequelize } from "sequelize";
 
-const connection = async () => {
-  try {
-    const conn = await mysql.createConnection({
-      host: "localhost",
-      user: "root",
-      password: "",
-      database: "martes",
-      port: "3306",
-    });
-    console.log(`🚀 ~ connection db ok`);
-    return conn;
-  } catch (error) {
-    console.log(`🚀 ~ connection ~ error:`, error);
-  }
-};
+const connection = new Sequelize("martes", "root", "", {
+  host: "localhost",
+  dialect: "mysql",
+  port: 3306,
+});
 
-const db = await connection();
+try {
+  await connection.authenticate();
+  console.log('Connection has been established successfully.');
+} catch (error) {
+  console.error('Unable to connect to the database:', error);
+}
 
-export default db;
+export default connection;

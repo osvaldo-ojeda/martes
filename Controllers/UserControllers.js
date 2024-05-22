@@ -1,4 +1,4 @@
-import db from "../connection/connection.js";
+import User from "../Models/User.js";
 
 class UserControllers {
   async getAllUser(req, res) {
@@ -15,11 +15,15 @@ class UserControllers {
   async createUser(req, res) {
     try {
       const { name, mail, password } = req.body;
-      const query = `INSERT INTO user (name, password, mail) VALUES(?,?,?)`;
-      const [result] = await db.query(query, [name, password, mail]);
-      res
-        .status(200)
-        .send({ success: true, message: "usuario creado con exito" });
+      const result = await User.create({
+        name,
+        mail,
+        password,
+      });
+      res.status(200).send({
+        success: true,
+        message: `usuario ${result.dataValues.name} creado con exito`,
+      });
     } catch (error) {
       res.status(400).send({ success: false, message: error });
     }
