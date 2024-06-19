@@ -1,10 +1,11 @@
 import { Router } from "express";
-import userRoutes from "./usersRoutes.js";
-import productRoutes from "./productRoutes.js";
-
+import WordController from "../controllers/WordController.js";
 
 const routes = Router();
-routes.use("/product", productRoutes);
-routes.use("/user", userRoutes);
+const wordController = new WordController();
+routes.post("/", wordController.insertWord);
+routes.get("/", wordController.getWords);
+routes.get("/:cantidad", wordController.getWordsApi);
+routes.delete("/");
 
 export default routes;
